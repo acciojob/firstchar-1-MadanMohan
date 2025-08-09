@@ -1,10 +1,13 @@
 function firstChar(text) {
-  // your code here
-	let string = text.trim()
-	console.log(string.charAt(0));
+  // Remove extra spaces at start and end
+  let string = text.trim();
+  
+  // Return the first character
+  return string.charAt(0);
 }
 
-// Do not change the code below
-//Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
+// Uncomment to get user input
+const text = prompt("Enter text:");
+
+// Show the first character
 alert(firstChar(text));
